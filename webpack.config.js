@@ -8,6 +8,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: "build.js"
   },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000,
+    ignored: /node_modules/
+  },
   module: {
     rules: [
         {
